@@ -31,6 +31,8 @@ ALLOWED_HOSTS = ['localhost', '*']
 # Application definition
 
 INSTALLED_APPS = [
+    'apps.home',
+    'apps.livros' ,
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -105,7 +107,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'pt-br'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Fortaleza'
 
 USE_I18N = True
 
