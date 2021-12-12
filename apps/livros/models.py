@@ -1,7 +1,6 @@
 from django.db import models
 
-# Create your models here.
-class livros(models.Model):
+class Livros(models.Model):
 
     id = models.AutoField(primary_key=True, db_column='id')
-    nome = models.CharField(default='', max_length= 200)
+    nome = models.CharField(default='', null=True, blank=True, max_length=200)
