@@ -7,6 +7,6 @@ from apps.home import urls as home_urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('listar/', include(livros_urls)),
+    path('livros/', include(livros_urls)),
     path('', include(home_urls)),
 ]
