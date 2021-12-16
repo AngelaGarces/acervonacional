@@ -1,4 +1,3 @@
-
 from django.contrib import admin
 from django.urls import path, include
 
@@ -10,3 +9,5 @@ urlpatterns = [
     path('livros/', include(livros_urls)),
     path('', include(home_urls)),
 ]
+
+
