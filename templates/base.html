@@ -33,7 +33,7 @@
             <div class="card">
                 <div class="body">
                     <div class="input-group m-b-0">                
-                        <input type="text" class="form-control" placeholder="Search...">
+                        <input type="text" class="form-control" placeholder="Busque...">
                         <span class="input-group-addon">
                             <i class="zmdi zmdi-search"></i>
                         </span>
@@ -46,15 +46,15 @@
                         <div class="col-lg-3 col-md-6 col-sm-12">
                             <h6> ALN </h6>
                             <ul class="list-unstyled">
-                                <li><a href="{% url 'home' %}"> LIVROS </a></li>
-                                <li><a href="{% url 'livros_listar' %}"> Categorias</a></li>
+                                <li><a href="{% url 'home' %}">HOME </a></li>
+                                <li><a href="{% url 'livros_listar' %}"> LIVROS </a></li>
                             </ul>
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-12">
                             <h6> OUTROS PROJETOS</h6>
                             <ul class="list-unstyled">                            
-                                <li><a href="https://github.com/arthuroffline/History2"> Portfólio de História</a> </li>
-                                <li><a href="https://angelagarces.github.io/segurancapublica/"> Site Segurança Pública</a></li>
+                                <li><a href="https://github.com/arthuroffline/History2" target="_blank"> Portfólio de História</a> </li>
+                                <li><a href="https://angelagarces.github.io/segurancapublica/" target="_blank"> Site Segurança Pública</a></li>
                             </ul>
                         </div> 
                         <div class="col-lg-3 col-md-6 col-sm-12">
@@ -214,24 +214,11 @@
                 </div>
             </div>
         </div>
-
-      <!-- Libras -->
-      <div vw class="enabled">
-        <div vw-access-button class="active"></div>
-        <div vw-plugin-wrapper>
-          <div class="vw-plugin-top-wrapper"></div>
-        </div>
-      </div>
-      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-      <script>
-        new window.VLibras.Widget('https://vlibras.gov.br/app');
-      </script>
-
-
         {% block main %} {% endblock %}
     </div>
 </section>
-
+            
+                
 <!-- Jquery Core Js --> 
 <script src="{% static 'assets/bundles/libscripts.bundle.js' %}"></script> <!-- Lib Scripts Plugin Js --> 
 <script src="{% static 'assets/bundles/vendorscripts.bundle.js' %}"></script> <!-- Lib Scripts Plugin Js --> 
