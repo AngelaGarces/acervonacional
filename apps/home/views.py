@@ -6,3 +6,7 @@ class HomeView(TemplateView):
     template_name = "home.html"
     success_url = reverse_lazy('home')
 
+class SobreView(TemplateView):
+    template_name = "sobre.html"
+    success_url = reverse_lazy('sobre')
+
